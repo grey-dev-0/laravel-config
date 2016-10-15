@@ -1,0 +1,20 @@
+{
+	"name": "grey-dev-0/laravel-config",
+	"version": "1.0",
+	"license": "MIT",
+	"description": "An extension package for Laravel 5 that creates and manipulates standard configuration files.",
+	"authors": [
+		{
+			"name": "Mohyaddin Saleh",
+			"email": "mo7y.66@gmail.com"
+		}
+	],
+	"require": {
+		"laravel/framework": ">= 5.0 <= 5.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"GreyDev\\ConfigExtension\\": "src/"
+		}
+	}
+}
