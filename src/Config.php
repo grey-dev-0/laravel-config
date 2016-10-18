@@ -5,6 +5,15 @@ use Illuminate\Support\Arr;
 
 class Config extends Repository{
 	/**
+	 * Config extension constructor, referring to the original repository's data.
+	 *
+	 * @param Repository $config original configuration Repository object.
+	 */
+	public function __construct($config){
+		$this->items = &$config->items;
+	}
+
+	/**
 	 * Create a new config file in the default configuration directory.
 	 *
 	 * @param string $filename Filename of the config file to be created.
